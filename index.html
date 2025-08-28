@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ale Ojeda - Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <!-- Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Styles -->
+    <link href="css/styles.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div class="d-flex">
+      <!-- Navegacion-->
+      <header class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="imagen">
+          <img
+            class="img-fluid img-profile rounded-circle mx-auto mb-2"
+            src="assets/img/profile.jpg"
+            alt="..."
+          />
+        </div>
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">Sobre mí</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#tecnologias">tecnologías</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#proyectos">proyectos personales</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#formacion">formacion</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Experiencia laboral</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">contacto</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- Contenido principal -->
+      <main class="content flex-grow-1 px-4">
+        <!-- Sección: Sobre mí -->
+        <section id="about" class="d-flex align-items-center min-vh-100">
+          <div class="hero">
+            <div class="about">
+              <div class="name">
+                <h1 class="name-text">
+                  Alejandro <span class="apellido">Ojeda</span>
+                </h1>
+              </div>
+              <div class="sub-titulo mb-5">Esperanza, Santa Fe</div>
+              <div class="texto-presentacion mb-5">
+                <p>
+                  Soy un desarrollador backend en formación, con conocimientos
+                  sólidos en C#, .NET y bases de datos SQL Server. He
+                  desarrollado aplicaciones de escritorio utilizando Windows
+                  Forms y ADO.NET, y actualmente me encuentro aprendiendo
+                  ASP.NET MVC para dar el salto al desarrollo web. Me interesa
+                  especialmente la lógica de negocio, la optimización de
+                  procesos y el trabajo en entornos colaborativos. Busco mi
+                  primera oportunidad profesional como desarrollador para seguir
+                  creciendo y aportando valor desde el backend.
+                </p>
+              </div>
+              <div class="social-icons">
+                <a class="social-button email" href="mailto:aleoe.12@gmail.com">
+                  <i class="fa-regular fa-envelope"></i>
+                  <span>aleoe.12@gmail.com</span>
+                </a>
+                <a
+                  class="social-button"
+                  href="https://tu-cv.com"
+                  target="_blank"
+                >
+                  <i class="fa-regular fa-file-lines"></i>
+                </a>
+                <a
+                  class="social-button"
+                  href="https://github.com/usuario"
+                  target="_blank"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+                <a
+                  class="social-button"
+                  href="https://linkedin.com/in/usuario"
+                  target="_blank"
+                >
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Sección: Tecnologias -->
+        <section
+          id="tecnologias"
+          class="d-flex align-items-center min-vh-100"
+        >
+          <div class="container">
+            <h2 class="seccion-titulo">Tecnologías</h2>
+            <p class="seccion-parrafo">
+              Mi stack actual combina tecnologías backend y herramientas
+              modernas que utilizo a diario en mis proyectos personales y de
+              formación, siempre buscando seguir aprendiendo y optimizando mis
+              habilidades.
+            </p>
+            <h3 class="seccion-subtitulo">
+              Stack de tecnologías que utilizo en mis proyectos
+            </h3>
+            <div class="tecnologias">
+              <div class="grupo-tecnologias">
+                <h4 class="titulo-grupo">backend</h4>
+                <div class="iconos-lenguajes">
+                  <div class="lenguaje">
+                    <img
+                      src="assets/icons/csharp.svg"
+                      class="icono-tecnologia"
+                      alt="C#"
+                      title="C#"
+                    />
+                    <h3 class="lenguaje-subtitulo">c#</h3>
+                  </div>
+                  <div class="lenguaje">
+                    <img
+                      src="assets/icons/dotnet.svg"
+                      class="icono-tecnologia"
+                      alt="dotnet"
+                      title="dotnet"
+                    />
+                    <h3 class="lenguaje-subtitulo">.net</h3>
+                  </div>
+                  <div class="lenguaje">
+                    <img
+                      src="assets/icons/microsoft-sql-server-logo.svg"
+                      class="icono-tecnologia"
+                      alt="sql server"
+                      title="sql server"
+                    />
+                    <h3 class="lenguaje-subtitulo">sql server</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="grupo-tecnologias">
+                <h4 class="titulo-grupo">frontend</h4>
+                <div class="iconos-lenguajes">
+                  <div class="lenguaje">
+                    <img
+                      src="assets/icons/javascript-svgrepo-com.svg"
+                      class="icono-tecnologia"
+                      alt="JavaScript"
+                      title="Java Script"
+                    />
+                    <h3 class="lenguaje-subtitulo">JavaScript</h3>
+                  </div>
+                  <div class="lenguaje">
+                    <img
+                      src="assets/icons/html-5-svgrepo-com.svg"
+                      class="icono-tecnologia"
+                      alt="HTML"
+                      title="HTML"
+                    />
+                    <h3 class="lenguaje-subtitulo">html5</h3>
+                  </div>
+                  <div class="lenguaje">
+                    <img
+                      src="assets/icons/css3.svg"
+                      class="icono-tecnologia"
+                      alt="css"
+                      title="css"
+                    />
+                    <h3 class="lenguaje-subtitulo">css3</h3>
+                  </div>
+                  <div class="lenguaje">
+                    <img
+                      src="assets/icons/bootstrap.svg"
+                      class="icono-tecnologia"
+                      alt="bootstrap"
+                      title="bootstrap"
+                    />
+                    <h3 class="lenguaje-subtitulo">bootstrap</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tecnologias">
+              <div class="grupo-tecnologias">
+                <h4 class="titulo-grupo">herramientas</h4>
+                <div class="iconos-lenguajes">
+                  <div class="lenguaje">
+                    <img
+                      src="assets/icons/git-svgrepo-com.svg"
+                      class="icono-tecnologia"
+                      alt="git"
+                      title="git"
+                    />
+                    <h3 class="lenguaje-subtitulo">git</h3>
+                  </div>
+                  <div class="lenguaje">
+                    <img
+                      src="assets/icons/github.svg"
+                      class="icono-tecnologia"
+                      alt="gitHub"
+                      title="git hub"
+                    />
+                    <h3 class="lenguaje-subtitulo">git hub</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="grupo-tecnologias">
+                <h4 class="titulo-grupo">actualmente Aprendiendo</h4>
+                <ul class="aprendiendo-lista">
+                  <li>ASP.NET MVC</li>
+                  <li>Entity Framework</li>
+                  <li>Patrones de diseño</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Sección: Proyectos  -->
+        <section
+          id="proyectos"
+          class="section-habilidades d-flex align-items-center min-vh-100"
+        >
+          <div class="container">
+            <h2 class="seccion-titulo">Proyectos personales</h2>
+            <div class="proyectos">
+              <div class="row g-4">
+                <div class="col-md-4">
+                  <div class="card proyecto-card">
+                    <img
+                      src="/assets/img/gestorInventario.JPG"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Gestor de Inventario</h5>
+                      <p class="card-text">
+                        Aplicación de escritorio desarrollada en C# con ADO.NET
+                        y SQL Server. Permite gestionar productos, stock y
+                        ventas.
+                      </p>
+                    </div>
+                    <div class="card-body card-buttons">
+                      <a
+                        href="https://github.com/usuario/repositorio"
+                        target="_blank"
+                        class="btn-icon"
+                        title="Ver código en GitHub"
+                      >
+                        <i class="fab fa-github"></i>
+                      </a>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card proyecto-card">
+                    <img
+                      src="/assets/img/paginaInsitucional.jpeg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Sitio institucional</h5>
+                      <p class="card-text">
+                        Sitio web institucional ficticio, maquetado con HTML,
+                        CSS y Bootstrap.
+                      </p>
+                    </div>
+                    <div class="card-body card-buttons">
+                      <a
+                        href="https://github.com/usuario/repositorio"
+                        target="_blank"
+                        class="btn-icon"
+                        title="Ver código en GitHub"
+                      >
+                        <i class="fab fa-github"></i>
+                      </a>
+                      <a
+                        href="#"
+                        class="btn-icon"
+                        title="Ver demo o ejecutable"
+                      >
+                        <i class="fa-solid fa-up-right-from-square"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card proyecto-card">
+                    <img
+                      src="/assets/img/generadorPresupuesto.jpeg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Generador de presupuesto</h5>
+                      <p class="card-text">
+                        Formulario web dinámico que permite generar mensajes personalizados.
+                        Desarrollado utilizando HTML, CSS (con Bootstrap para estilos), y JavaScript
+                      </p>
+                    </div>
+                    <div class="card-body card-buttons">
+                      <a
+                        href="https://github.com/usuario/repositorio"
+                        target="_blank"
+                        class="btn-icon"
+                        title="Ver código en GitHub"
+                      >
+                        <i class="fab fa-github"></i>
+                      </a>
+                      <a
+                        href="#"
+                        class="btn-icon"
+                        title="Ver demo o ejecutable"
+                      >
+                        <i class="fa-solid fa-up-right-from-square"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card proyecto-card">
+                    <img
+                      src="/assets/img/ButacasCine.JPG"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Butacas Cine</h5>
+                      <p class="card-text">
+                        Proyecto de consola sencillo que simula una aplicacion de reserva de butacas para cine/teatro donde pongo en practicas conceptos básicos de la programación en C#. 
+                      </p>
+                    </div>
+                    <div class="card-body card-buttons">
+                      <a
+                        href="https://github.com/usuario/repositorio"
+                        target="_blank"
+                        class="btn-icon"
+                        title="Ver código en GitHub"
+                      >
+                        <i class="fab fa-github"></i>
+                      </a>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Sección: Formacion  -->
+        <section
+          id="formacion"
+          class="section-educacion d-flex align-items-center min-vh-100"
+        >
+          <div class="container">
+            <h2 class="seccion-titulo">Formación academica</h2>            
+              <div class="row">
+                <div class="formacion-info col-md-8">
+                  <h3 class="titulo-formacion mb-0">Técnico Superior en Análisis y Desarrollo de Software</h3>
+                  <h4 class="subTitulo-formacion">Instituto de educacion superior Santa Elena, Entre Ríos</h4>
+                  <p class="seccion-parrafo">Formación en desarrollo de aplicaciones de escritorio y web, bases de datos y gestión de proyectos.</p>
+                </div>
+                <div class="formacion-fecha col-md-4">
+                  <span class="fecha">2015 - 2018</span>
+                </div>
+              </div>            
+            <h2 class="seccion-titulo titulo-cursos">cursos y certificaciones</h2>
+              <div class="curso-item">
+                <i class="fa-solid fa-trophy"></i>
+                <h6 class="titulo-curso">
+                  C# nivel 3 (web .net)
+                  <span class="institucion-curso">Maxi programa • 2025</span>
+                </h6>
+              </div>
+              <div class="curso-item">
+                <i class="fa-solid fa-trophy"></i>
+                <h6 class="titulo-curso">
+                  C# nivel 2 (.Net + SQL)
+                  <span class="institucion-curso">Maxi programa • 2024</span>
+                </h6>
+              </div>
+              <div class="curso-item">
+                <i class="fa-solid fa-trophy"></i>
+                <h6 class="titulo-curso">
+                  git / github
+                  <span class="institucion-curso">Codea rock • 2023</span>
+                </h6>
+              </div>
+              <div class="curso-item">
+                <i class="fa-solid fa-trophy"></i>
+                <h6 class="titulo-curso">
+                  JavaScript
+                  <span class="institucion-curso">codea rock • 2022</span>
+                </h6>
+              </div>
+              <div class="curso-item">
+                <i class="fa-solid fa-trophy"></i>
+                <h6 class="titulo-curso">
+                  desarrollo web
+                  <span class="institucion-curso">coderhouse • 2022</span>
+                </h6>
+              </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+
+  <script
+    src="https://kit.fontawesome.com/40f2c726a7.js"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"
+  ></script>
+</html>

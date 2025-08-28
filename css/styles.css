@@ -1,0 +1,366 @@
+:root {
+  --color-primario: #3d7a8c;
+  --color-primario-claro: #5e9db0;
+  --color-primario-texto: #eceaeaf1;
+  --color-primario-hover-texto: #ffffff;
+  --color-acento: #bd5d38;
+  --color-hover: #a94d2a;
+  --color-fondo: #f4f4f4;
+  --color-secundario: #d9e3e6;
+  --color-titulos: #2c2c2c;
+  --color-texto: #4b4b4b;
+  --color-borde: #dddddd;
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Saira Extra Condensed", sans-serif;
+  background-color: var(--color-fondo);
+}
+
+@media (min-width: 992px) {
+  header {
+    position: sticky;
+    top: 0;
+    align-self: flex-start;
+    height: 100vh;
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+    padding-left: 0;
+    padding-right: 0;
+    display: flex;
+    flex-direction: column;
+    width: 17rem;
+  }
+
+  .imagen {
+    margin: auto auto 0;
+    max-width: 10rem;
+    max-height: 10rem;
+  }
+
+  .imagen img {
+    border: 0.5rem solid var(--color-primario-claro);
+  }
+
+  .navbar {
+    margin-bottom: auto;
+  }
+
+  .navbar-nav {
+    flex-direction: column !important;
+    padding-top: 15px;
+    font-weight: 600;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+  }
+
+  .nav-item {
+    text-align: center;
+  }
+
+  .navbar-nav a {
+    color: var(--color-primario-texto);
+  }
+
+  .navbar-nav a:hover {
+    color: var(--color-primario-hover-texto);
+  }
+
+  .content {
+    flex: 1;
+    padding: 0 2rem;
+    align-items: center;
+  }
+
+  section {
+    position: relative;
+    width: 100%;
+    padding-right: 4.8rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .name {
+    color: var(--color-titulos);
+    text-transform: uppercase;
+    font-family: "Saira Extra Condensed", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .name-text {
+    font-size: 6rem;
+    margin-bottom: 0;
+  }
+
+  .apellido {
+    color: var(--color-acento);
+  }
+
+  .texto-presentacion {
+    font-size: 1.2rem;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    color: var(--color-texto);
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .social-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 55px;
+    border: 2px solid var(--color-primario);
+    border-radius: 999px;
+    font-size: 1.3rem;
+    color: var(--color-primario);
+    background-color: transparent;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+
+  .social-button.email {
+    padding: 0 18px;
+    border-color: var(--color-acento);
+    color: var(--color-acento);
+    width: auto;
+    gap: 10px;
+  }
+
+  .social-button span {
+    line-height: 1;
+    font-size: 1.2rem;
+    font-weight: 400;
+    white-space: nowrap;
+    display: inline-block;
+  }
+
+  .social-button:hover {
+    border: 2px solid var(--color-primario-claro);
+    color: var(--color-primario-claro);
+  }
+
+  .social-button.email:hover {
+    background-color: var(--color-acento);
+    border-color: var(--color-acento);
+    color: var(--color-primario-texto);
+  }
+
+  .seccion-titulo {
+    margin-bottom: 1.3rem;
+    margin-top: 2.5rem;
+    font-family: "Saira Extra Condensed", sans-serif;
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--color-titulos);
+    text-transform: uppercase;
+  }
+
+  .seccion-parrafo {
+    font-size: 1.2rem;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    color: var(--color-texto);
+    max-width: 700px;
+    margin-bottom: 2rem;
+  }
+
+  .seccion-subtitulo {
+    color: var(--color-titulos);
+    font-family: "Saira Extra Condensed", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-bottom: 1.3rem;
+    text-transform: uppercase;
+  }
+
+  .tecnologias {
+    display: flex;
+  }
+
+  .grupo-tecnologias {
+    margin-bottom: 1.3rem;
+    width: 360px;
+  }
+
+  .titulo-grupo {
+    font-family: "Saira Extra Condensed", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--color-titulos);
+    margin-bottom: 0.7rem;
+    text-transform: uppercase;
+  }
+
+  .iconos-lenguajes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .lenguaje {
+    width: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+  }
+
+  .icono-tecnologia {
+    width: 70%;
+    margin-bottom: 5px;
+  }
+
+  .lenguaje-subtitulo {
+    color: var(--color-texto);
+    font-family: "Saira Extra Condensed", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 0;
+    text-transform: uppercase;
+  }
+
+  .aprendiendo-lista {
+    font-family: "Saira Extra Condensed", sans-serif;
+    list-style: disc inside;
+    padding-left: 1.2rem;
+    color: var(--color-texto);
+    font-size: 1.1rem;
+  }
+
+  .proyectos {
+    display: flex;
+  }
+
+  .card.proyecto-card {
+    height: 95%;
+    width: 18rem;
+    margin-top: 25px;
+    border: 1px solid var(--color-borde);
+    border-radius: 0.75rem;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+  }
+
+  .proyecto-card:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .proyecto-card .card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: "Saira Extra Condensed", sans-serif;
+    color: var(--color-titulos);
+  }
+
+  .proyecto-card .card-text {
+    font-size: 1rem;
+    color: var(--color-texto);
+  }
+
+  .card-buttons {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+    margin-top: 1rem;
+  }
+
+  .btn-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border: 2px solid var(--color-primario);
+    border-radius: 50%;
+    font-size: 1.1rem;
+    color: var(--color-primario);
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+
+  .btn-icon:hover {
+    background-color: var(--color-primario);
+    color: white;
+  }
+
+  .titulo-formacion {
+    font-family: "Saira Extra Condensed", sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-titulos);
+    text-transform: uppercase;
+  }
+
+  .subTitulo-formacion {
+    color: var(--color-texto);
+    font-family: "Saira Extra Condensed", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+  }
+  
+  .formacion-fecha {
+    display: flex;
+    justify-content: end;
+  }
+
+  .fecha {
+    color: var(--color-acento);
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+  }
+
+  .titulo-cursos {
+    margin-top: 0;
+  }
+
+  .curso-item {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .curso-item i {
+    color: var(--color-acento);
+    margin: 5px;
+    font-size: 1.4rem;
+  }
+
+  .titulo-curso {
+    margin: 5px;
+    color: var(--color-texto);
+    font-family: "Saira Extra Condensed", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .institucion-curso {
+    font-weight: 400;
+    margin-left: 10px;
+  }
+
+}
