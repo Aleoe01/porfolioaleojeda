@@ -40,6 +40,7 @@ body {
     width: 17rem;
   }
 
+
   .imagen {
     margin: auto auto 0;
     max-width: 10rem;
@@ -322,10 +323,12 @@ body {
     margin-bottom: 0.5rem;
     text-transform: uppercase;
   }
-  
+
   .formacion-fecha {
     display: flex;
-    justify-content: end;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-end;
   }
 
   .fecha {
@@ -363,4 +366,67 @@ body {
     margin-left: 10px;
   }
 
+  .footer {
+    min-height: 30vh;
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--color-primario);
+    color: var(--color-primario-texto);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .text-footer {
+    margin-bottom: 0;
+  }
+
+  .links-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .social-footer {
+    display: flex;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .footer-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 55px;
+    border: 2px solid var(--color-borde);
+    border-radius: 999px;
+    font-size: 1.3rem;
+    color: var(--color-borde);
+    background-color: transparent;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+
+  .footer-button:hover {
+    border: 2px solid var(--color-primario-hover-texto);
+    color: var(--color-primario-hover-texto);
+  }
+
+  .footer-button.email {
+    padding: 0 18px;
+    background-color: var(--color-acento);
+    border-color: var(--color-acento);
+    color: var(--color-primario-texto);
+    width: auto;
+    gap: 10px;
+  }
+
+  .footer-button.email:hover {
+    background-color: var(--color-hover);
+    background-color: var(--color-hover);
+    color: var(--color-primario-hover-texto);
+  }
 }
