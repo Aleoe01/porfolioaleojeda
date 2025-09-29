@@ -367,9 +367,9 @@ body {
   }
 
   .footer {
-    min-height: 30vh;
+    
     text-align: center;
-    padding: 1rem;
+    padding: 1.2rem 0 0.1rem;
     background-color: var(--color-primario);
     color: var(--color-primario-texto);
     display: flex;
@@ -399,11 +399,13 @@ body {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    padding: 0 18px;
+    gap: 10px;
+    width: 225px;
     height: 35px;
-    width: 55px;
     border: 2px solid var(--color-borde);
     border-radius: 999px;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     color: var(--color-borde);
     background-color: transparent;
     text-decoration: none;
@@ -420,7 +422,6 @@ body {
     background-color: var(--color-acento);
     border-color: var(--color-acento);
     color: var(--color-primario-texto);
-    width: auto;
     gap: 10px;
   }
 
